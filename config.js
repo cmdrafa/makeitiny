@@ -3,7 +3,7 @@ var config = {}
 
 config.db = {};
 
-config.webhost = "http://cloudtest-cmdrafa.c9users.io/";
+config.webhost = "http://198.211.127.96/";
 
 config.db.host = 'localhost';
 config.db.name = 'url_shortener'
