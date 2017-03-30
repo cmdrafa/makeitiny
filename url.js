@@ -19,7 +19,7 @@ var urlSchema = new Schema({
 
 urlSchema.pre('save', function(next){
     var doc = this;
-    counter.findByIdAndUpdate({_id: 'url_count'}, {$inc: {seq: 1} }, {upsert: true}, function(err, counter){
+    counter.findByIdAndUpdate({_id: 'url_count'}, {$inc: {seq: 1} }, {upsert: true, new: true}, function(err, counter){
         if(err){
             return next(err);
         }
