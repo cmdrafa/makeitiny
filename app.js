@@ -31,7 +31,7 @@ app.post('/api/tiny', function(req, res){
     
     Url.findOne({long_url: longUrl}, function(err, doc){
         if(doc){
-            shortUrl = config.webhost + base58.encode(doc._id);
+            shortUrl = config.webhost + ":" + port + base58.encode(doc._id);
             res.send({'shortUrl': shortUrl});
         }
         else{
