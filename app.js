@@ -42,7 +42,7 @@ app.post('/api/tiny', function(req, res){
                 if(err){
                     console.log(err);
                 }
-                shortUrl = config.webhost + base58.encode(newUrl._id);
+                shortUrl = config.webhost + ":" + port + base58.encode(newUrl._id);
                 res.send({'shortUrl': shortUrl});
                 console.log(shortUrl)
             });
