@@ -3,7 +3,7 @@ var config = {}
 
 config.db = {};
 
-config.webhost = "http://198.211.127.96";
+config.webhost = "http://tiny.rafakr.cf";
 
 config.db.host = 'localhost';
 config.db.name = 'url_shortener'
